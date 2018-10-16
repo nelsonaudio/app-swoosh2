@@ -17,10 +17,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resource that can be recreated.
+    // Function to go back to previous View, must CTRL drag from back button to Exit button on viewController, it knows to automatically go to the previous screen
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+        
     }
 
 }
