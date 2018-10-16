@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,19 +83,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="oAN-w0-iSR" id="dbs-nU-QKP"/>
-                        <outlet property="swoosh" destination="had-HQ-J6K" id="KGT-me-S33"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="hXd-5G-b0S">
             <objects>
-                <viewController id="rFw-Nn-HTg" sceneMemberID="viewController">
+                <viewController id="rFw-Nn-HTg" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CSc-Yt-DCx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +109,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="rFw-Nn-HTg" eventType="touchUpInside" id="a2i-3v-Xqu"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="oSu-vz-0k7">
                                 <rect key="frame" x="16" y="40" width="382" height="72"/>
@@ -201,6 +200,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1VH-CC-C4m"/>
                     </view>
+                    <connections>
+                        <segue destination="IkE-xq-xFZ" kind="show" identifier="skillVCSegue" id="4s7-lp-vLX"/>
+                    </connections>
                 </viewController>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7b-o8-BS6" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -229,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="933.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="a32-mL-GfL">
             <objects>
-                <viewController id="IkE-xq-xFZ" sceneMemberID="viewController">
+                <viewController id="IkE-xq-xFZ" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mg4-F2-WR4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
